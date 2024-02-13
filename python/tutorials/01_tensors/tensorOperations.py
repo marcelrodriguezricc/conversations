@@ -1,4 +1,4 @@
-# Tensor Operation Examples:
+# From https://pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html
 
 # Libraries:
 import torch # Import PyTorch library.

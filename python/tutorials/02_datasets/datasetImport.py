@@ -1,3 +1,5 @@
+# From https://pytorch.org/tutorials/beginner/basics/data_tutorial.html
+
 # Libraries:
 import torch # PyTorch Library.
 from torch.utils.data import Dataset # Data set class.

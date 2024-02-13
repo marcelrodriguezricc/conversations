@@ -1,3 +1,6 @@
+
+# From https://pytorch.org/tutorials/beginner/basics/data_tutorial.html
+
 import os
 import pandas as pd
 from torchvision.io import read_image
