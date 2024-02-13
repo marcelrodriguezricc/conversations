@@ -1,5 +1,5 @@
 Tutorials:
-    1. Tensor Flow Tutorials - https://www.tensorflow.org/tutorials
+    1. PyTorch Tutorials - https://pytorch.org/tutorials/
 
 Tensors:
     1. Tensors for Neural Networks... - https://www.youtube.com/watch?app=desktop&v=L35fFDpwIM4

@@ -5,12 +5,51 @@ Works, Explorations, and Studies
 
 After cloning the repository:
 
-1. The "python" directory will require a virtual Python environment to run Python scripts.
+1. Python Dependencies:
 
-    - PyTorch needs to be installed in the virtual environment by running: "pip3 install torch torchvision torchaudio" from the terminal while the virtual environment is active.
+    - A virtual environment will need to be created in the cloned repository.
 
-    - For some examples, the Matplotlib (https://matplotlib.org/) library for visualization with Python will also need to be installed in the virtual environment.
+        - Here's an example using Conda (https://docs.conda.io/projects/conda/en/stable/#):
 
-2. The "cpp" directory will require LibTorch (https://pytorch.org/) to run C++ applications. 
+            - ``` conda create -n env-01 python=3.9 scipy=0.15.0 numpy ```
 
-    - You may additionally have to install and move libomp.dylib in the "lib" subfolder. If you're on macOS, and have Homebrew (https://brew.sh/) installed, you can use the command "brew install libomp" from the terminal to install libomp.dylib.
+    - PyTorch (https://pytorch.org/).
+
+        - Activate the virtual environment, where "ABOLSUTE-PATH-TO-YOUR-ENVRIONMENT":
+
+            - ``` conda activate "ABSOLUTE-PATH-TO-YOUR-EVIRONMENT" ```
+
+        - Then run the following to install PyTorch on the virtual envrionment:
+
+            -   ``` pip3 install torch torchvision torchaudio ```
+
+    - Matplotlib (https://matplotlib.org/) library for data visualization.
+            
+        - Activate the virtual environment, where "ABOLSUTE-PATH" is the absolute path to your virtual envrionment:
+
+            - ``` conda activate "ABSOLUTE-PATH" ```
+
+        - Then run the following to install Matplotlib:
+            
+            - ``` conda install matplotlib ```
+
+    - Jupyter Lab (https://jupyter.org/) development environment.
+
+        - Activate the virtual environment, where "ABOLSUTE-PATH" is the absolute path to your virtual envrionment:
+
+            - ``` conda activate "ABSOLUTE-PATH" ```
+            
+         - Then run the following to install Jupyter Lab:
+
+            - ``` pip install jupyterlab ```
+
+
+2. C++ Dependencies:
+
+    - LibTorch (https://pytorch.org/), a PyTorch library for C++.
+
+        - Download LibTorch at https://pytorch.org/get-started/locally/ and move it to the "cpp" directory.
+
+        - MacOS users should install libomp.dylib and move it to the "lib" subfolder of the "libtorch" directory using Homebrew (https://brew.sh/):
+
+            - ``` brew install libomp ```
