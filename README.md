@@ -15,9 +15,9 @@ After cloning the repository:
 
     - PyTorch (https://pytorch.org/).
 
-        - Activate the virtual environment, where "ABOLSUTE-PATH-TO-YOUR-ENVRIONMENT":
+        - Activate the virtual environment, where "ABOLSUTE-PATH" is the absolute path to your virtual envrionment:
 
-            - ``` conda activate "ABSOLUTE-PATH-TO-YOUR-EVIRONMENT" ```
+            - ``` conda activate "ABSOLUTE-PATH" ```
 
         - Then run the following to install PyTorch on the virtual envrionment:
 
