@@ -1,8 +1,0 @@
-Tutorials:
-    1. PyTorch Tutorials - https://pytorch.org/tutorials/
-
-Tensors:
-    1. Tensors for Neural Networks... - https://www.youtube.com/watch?app=desktop&v=L35fFDpwIM4
-    2. Introduction to Tensors for Machine Learning - https://machinelearningmastery.com/introduction-to-tensors-for-machine-learning/
-    3. A Survey on Tensor Techniques... - https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8884203
-    4. Introduction to Tensor Decompositions... - https://arxiv.org/pdf/1711.10781.pdf
