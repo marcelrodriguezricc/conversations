@@ -37,7 +37,7 @@ After cloning the repository:
 
         - Activate the virtual environment, where "ABOLSUTE-PATH" is the absolute path to your virtual envrionment:
 
-            - ``` conda activate "ABOLUTE-PATH ```
+            - ``` conda activate "ABOLUTE-PATH" ```
         
         - Run the following to install Pandas inside of the virtual environment:
 

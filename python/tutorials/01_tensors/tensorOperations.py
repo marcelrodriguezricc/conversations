@@ -1,6 +1,6 @@
 # From https://pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html
 
-# Libraries:
+# Dependencies:
 import torch # Import PyTorch library.
 import numpy as np # Import NumPy library.
 
