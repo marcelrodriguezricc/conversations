@@ -1,7 +1,6 @@
-# MLIMS
-Machine Learning for Integrating Media Systems
+# Conversations with my Computer
 
-Works, Explorations, and Studies
+Works, explorations, and studies into machine learning for integrating media systems.
 
 After cloning the repository:
 
