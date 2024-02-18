@@ -10,9 +10,9 @@ from torchvision import datasets, transforms  # Import datasets and transforms
 # Get Device:
 device = ( # Set the device for training model...
     "cuda" # Use GPU.
-    if torch.cuda.is_available() # If graphics card is not available...
+    if torch.cuda.is_available() # If GPU is not available...
     else "mps" # Use MPU.
-    if torch.backends.mps.is_available() # If MPS backend is not available...
+    if torch.backends.mps.is_available() # If MPS is not available...
     else "cpu" # Use CPU.
 )
 
@@ -38,3 +38,10 @@ class NeuralNetwork(nn.Module): # Define class Neural Network and inherit from n
 # Print the Structure of the Neural Network:
 model = NeuralNetwork().to(device) # Create an instance of the neural network, and move it to the device.
 print(model) # Print the structure.
+
+# Execute the Model:
+X = torch.rand(1, 28, 28, device=device) # Generate a single 28 x 28 tensor filled with random numbers on the previously specified device.
+logits = model(X) # Obtain the logits by passing the randomally generated tensor "X" to the model.
+pred_probab = nn.Softmax(dim=1)(logits)
+y_pred = pred_probab.argmax(1)
+print(f"Predicted class: {y_pred}")

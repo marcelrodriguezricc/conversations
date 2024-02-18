@@ -11,8 +11,6 @@ import os # Library for interacting with the operating system.
 import pandas as pd # Library for data analysis and manipulation.
 from torchvision.io import read_image # Function which converts images into tensors.
 
-# Loading Datasets:
-
 # Training:
 training_data = datasets.FashionMNIST( # Load the FashionMNIST data set to use for training.
     root="data", # This is where the data will be stored.
