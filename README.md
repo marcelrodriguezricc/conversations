@@ -1,6 +1,6 @@
 # Conversations with my Computer
 
-Works, explorations, and studies into machine learning for integrating media systems.
+Works, explorations, and studies into machine learning for integrating media systems by Marcel Rodriguez-Riccelli.
 
 After cloning the repository:
 
