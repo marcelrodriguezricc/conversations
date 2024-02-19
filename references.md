@@ -23,4 +23,17 @@
 <h3>Neural Networks:</h3>
 
 - [What is a neural network?](https://www.ibm.com/topics/neural-networks)
+
 - [What is a linear regression?](https://www.ibm.com/topics/linear-regression)
+
+- [TensorFlow Playground](https://playground.tensorflow.org)
+
+- [Neural Networks and Deep Learning - Chapter 1](http://neuralnetworksanddeeplearning.com/chap1.html)
+
+<h3>Gradients:</h3>
+
+- [A Gentle Introduction to Function Derivatives](https://machinelearningmastery.com/a-gentle-introduction-to-function-derivatives/)
+
+- [What Is a Gradient in Machine Learning?](https://machinelearningmastery.com/gradient-in-machine-learning/)
+
+- [Neural Networks and Deep Learning - Chapter 2](http://neuralnetworksanddeeplearning.com/chap2.html)
