@@ -1,11 +1,10 @@
 # TENSORS
 
-Tensors are a class defined by PyTorch to store and operate on multi-dimensional arrays of numbers. 
-More generally, they are multidimensional fields of numbers. In the field of Machine Learning,  they're used to allow neural networks to do work on complex data sets.
+Tensors are a class defined by PyTorch to store and operate on multi-dimensional arrays of numbers. They're used as the to allow neural networks to do work on complex data sets.
 
 They can be used in several ways:
  
-1. Unit Values: Tensors can be used in place of unit values such as scalars, arrays, or matricies, In this way, tensors can express higher dimensional. This enables learning of complex data types, such as image or video.
+1. Unit Values: Tensors can be used in place of unit values such as scalars, arrays, or matricies, In this way, tensors can express higher dimensionalities. This enables learning of complex data types, such as images or videos.
 
 2. Fully Connected Layers: Tensors can be used in place of entire layers of nodes, containing all of the units, weights, and baises for an entire layer. This allows for efficient computation of gradients when applying techniques like backpropagation.
 

@@ -1,8 +1,8 @@
 # DATASETS
 
-A data set is quite simply a collection of data organized into a structure. They're usually taken from a specific source for a corresponding purpose. They can be accessed for training and testing machine learning models in pattern recognition for analytical and predictive processes.
+A dataset is a collection of data organized into a structure. They're usually taken from a specific source for a corresponding purpose. They can be accessed for training and testing machine learning models in pattern recognition for analytical and predictive processes.
 
-PyTorch allows users to implement data sets with two primitives:
+PyTorch allows users to implement datasets with two primitives:
 
 1. Dataset (torch.utils.data.Dataset) which stores the samples and corresponding labels.
 
