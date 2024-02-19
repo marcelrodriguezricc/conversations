@@ -19,3 +19,8 @@
 - [Introduction to Transforming Data](https://developers.google.com/machine-learning/data-prep/transform/introduction)
 
 - [What is One Hot Encoding...](https://medium.com/@michaeldelsole/what-is-one-hot-encoding-and-how-to-do-it-f0ae272f1179)
+
+<h3>Neural Networks:</h3>
+
+- [What is a neural network?](https://www.ibm.com/topics/neural-networks)
+- [What is a linear regression?](https://www.ibm.com/topics/linear-regression)
