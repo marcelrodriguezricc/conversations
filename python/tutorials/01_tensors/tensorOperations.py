@@ -22,7 +22,7 @@ print(f"6. Joined Horizontally: \n  {tensorHoriz}\n")
 y1 = tensor @ tensor.T # Perform a matrix multiplication of tensor "tensor" and a transposition of itself (swapped dimensionality).
 y2 = tensor.matmul(tensor.T) # This is the same as y1.
 y3 = torch.rand_like(y1) # Create a new tensor with the same parameters at y1 but filled with random scalar values.
-torch.matmul(tensor, tensor.T, out=y3) # Perform the multiplication of tensor "tensor" and it's transpoititon, but store the calculation in tensor y3.
+torch.matmul(tensor, tensor.T, out=y3) # Perform the multiplication of tensor "tensor" and it's transposition, but store the calculation in tensor y3.
 print(f"7. Matrix Mult: \n  y1: {y1}\n \n  y2: {y2}\n \n  y3: {y3}\n") # Print contents of tensor. They're all the same.
 
 # Element Multiplication:

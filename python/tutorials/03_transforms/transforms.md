@@ -4,7 +4,7 @@ Transforms in machine learning are used to manipulate data within a set in order
 
 Some examples of when transforms may be necessary:
 
-- Converting strings to numeric data for storing in and operating on matricies.
+- Converting strings to numeric data for storing in and operating on matrices.
 
     - One-hot or integer encoding.
 

@@ -11,7 +11,7 @@ print(f"\nTensor from Data: \n {x_data} \n") # Print contents.
 
 # From NumPy array:
 np_array = np.array(data) # Embed the tensor in a NumPy array.
-x_np = torch.from_numpy(np_array) # Ceate a tensor from the NumPy array.
+x_np = torch.from_numpy(np_array) # Create a tensor from the NumPy array.
 print(f"Tensor from Numpy Array: \n {x_np} \n") # Print contents.
 
 # From another Tensor:

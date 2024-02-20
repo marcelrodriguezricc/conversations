@@ -22,7 +22,7 @@ print(b.grad) # Print the gradients for the bias.
 z = torch.matmul(x, w) + b # Recompute the output tensor with the gradient computation.
 print(z.requires_grad) # Print the "requires_grad" flag for the output tensor, which should be "True".
 
-with torch.no_grad(): # Disable the gradient computation, for when we would like only do the foward computation by applying some input data.
+with torch.no_grad(): # Disable the gradient computation, for when we would like only do the forward computation by applying some input data.
     z = torch.matmul(x, w) + b # Recompute the output tensor without the gradient computation, 
 print(z.requires_grad) # Print the "requires_grad" flag for the output tensor, which should be "False".
 

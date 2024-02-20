@@ -14,7 +14,7 @@ from torchvision import datasets, transforms  # Import datasets and transforms
 device = ( # Set the device for training model...
     "cuda" # Use GPU.
     if torch.cuda.is_available() # If GPU is not available...
-    else "mps" # Use MPU.
+    else "mps" # Use MPS.
     if torch.backends.mps.is_available() # If MPS is not available...
     else "cpu" # Use CPU.
 )
@@ -33,7 +33,7 @@ class NeuralNetwork(nn.Module): # Define class Neural Network and inherit from n
             nn.Linear(512, 10), # Final layer, accepts an input tensor of size 512 and outputs a tensor of size 10, corresponding to number of output classes.
         )
 
-    def forward(self, x): # This function tells the neural network to feedfoward.
+    def forward(self, x): # This function tells the neural network to feedforward.
         x = self.flatten(x)  # Reshape the input tensor into a one dimensional tensor.
         logits = self.linear_relu_stack(x) # Pass to our previously established sequential network.
         return logits # Return raw predictions.
@@ -44,8 +44,8 @@ print(model) # Print the structure.
 
 # Execute the Model:
 X = torch.rand(1, 28, 28, device=device) # Generate a single 28 x 28 tensor filled with random numbers on the previously specified device.
-logits = model(X) # Obtain the logits by passing the randomally generated tensor "X" to the model. Logits here is a tensor that contains the raw unnormalized scores.
-pred_probab = nn.Softmax(dim=1)(logits) # Applies the softmax activation function to the convert the raw scores in the logits to probabilities.
+logits = model(X) # Obtain the logits by passing the randomly generated tensor "X" to the model. Logits here is a tensor that contains the raw unnormalized scores.
+pred_probab = nn.Softmax(dim=1)(logits) # Applies the SoftMax activation function to the convert the raw scores in the logits to probabilities.
 y_pred = pred_probab.argmax(1) # Select the class with the highest probability, which in this case is index 1.
 print(f"Predicted class: {y_pred}") # Print the predicted class.
 
@@ -53,10 +53,10 @@ print(f"Predicted class: {y_pred}") # Print the predicted class.
 # Layer Breakdown:
 
 # Generate random tensor to feed to the model:
-input_image = torch.rand(3,28,28) # Take a randomally generated tensor containing 3 28 X 28 images, and pass them to the network. 
+input_image = torch.rand(3,28,28) # Take a randomly generated tensor containing 3 28 X 28 images, and pass them to the network. 
 print(f"Input image: {input_image.size()}") # Print the size on the tensor.
 
-# Flatten the randomally generated tensor:
+# Flatten the randomly generated tensor:
 flatten = nn.Flatten() # Create an instance of the flatten class.
 flat_image = flatten(input_image) # Flatten to a single dimension, three arrays of 784 grayscale pixel values (3 x 28 X 28).
 print(f"Flattened image: {flat_image.size()}") # Print the size of the flattened tensor.
@@ -78,11 +78,11 @@ seq_modules = nn.Sequential( # Create a sequence of operations to be performed o
     nn.Linear(20, 10) # Pass the tensor to the second linear layer.
 )
 
-input_image = torch.rand(3,28,28) # Take a randomally generated tensor containing 3 28 X 28 images, and pass them to the network. 
-logits = seq_modules(input_image) # Apply the sequence of operations to the randomally generated tensor.
+input_image = torch.rand(3,28,28) # Take a randomly generated tensor containing 3 28 X 28 images, and pass them to the network. 
+logits = seq_modules(input_image) # Apply the sequence of operations to the randomly generated tensor.
 
-softmax = nn.Softmax(dim=1) # Create an instance of the softmax activation function.
-pred_probab = softmax(logits) # Pass the logits to the softmax activation function.
+softmax = nn.Softmax(dim=1) # Create an instance of the SoftMax activation function.
+pred_probab = softmax(logits) # Pass the logits to the SoftMax activation function.
 
 print(f"Model structure: {model}\n\n") # Print the model structure.
 
