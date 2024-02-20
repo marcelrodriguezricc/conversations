@@ -1,0 +1,3 @@
+# OPTIMIZATION
+
+Using an optimization algorithm, the parameters (weight, bias, activation)of each node are adjusted opposite to the gradient until the cost, or amount of error, is minimized. This process is called gradient descent. This entire process is performed iteratively until the cost is at a sufficient level. The amount by which each parameters is adjusted are controled by the learning rate, which can be also thought of as a step size for which each parameter can be changed each iteration of the optimization algorithm. Too large a learning rate will cause the algorithm to overcorrect, while a small learning rate will slow the process all together. 

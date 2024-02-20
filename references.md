@@ -37,3 +37,7 @@
 - [What Is a Gradient in Machine Learning?](https://machinelearningmastery.com/gradient-in-machine-learning/)
 
 - [Neural Networks and Deep Learning - Chapter 2](http://neuralnetworksanddeeplearning.com/chap2.html)
+
+<h3>Optimization:</h3>
+
+- [Backpropagation Calculus](https://www.youtube.com/watch?v=tIeHLnjs5U8)
