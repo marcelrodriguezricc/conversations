@@ -6,6 +6,6 @@ We can also understand this in terms of derivatives. A derivative is the rate of
 
 In machine learning, gradients can be described as the to the amount of error with respect to the weights and biases of each node. The gradient is calculated through an algorithm called backpropagation. During training, the model looks at the difference between the predicted output as compared to the expected output. Then, the backpropagation algorithm computes a gradient backwards from output to input, indicating how much the output would change if each parameter was to be adjusted by a small amount.
 
-Using an optimization algorithm, the parameters are adjusted opposite to the gradient in a process called gradient descent. The amount by which the parameters are adjusted are controled by the learning rate. Too large a learning rate will cause the algorithm to overcorrect, while a small learning rate will slow the process all together.
+Using an optimization algorithm, the parameters are adjusted opposite to the gradient in a process called gradient descent. The amount by which the parameters are adjusted are controled by the learning rate. Too large a learning rate will cause the algorithm to overcorrect, while a small learning rate will slow the process all together. This entire process is performed iteratively until the amount of error is at a sufficient level.
 
-This entire process is performed iteratively until the amount of error is at a sufficient level.
+PyTorch has a build in differentiation algorithm to compute gradients for any computational graph called *torch.autograd*.
