@@ -14,17 +14,17 @@ After cloning the repository:
 
     - [PyTorch](https://pytorch.org/) library for machine learning.
 
-        - Activate the virtual environment, where "ABOLSUTE-PATH" is the absolute path to your virtual envrionment:
+        - Activate the virtual environment, where "ABSOLUTE-PATH" is the absolute path to your virtual environment:
 
             - ``` conda activate "ABSOLUTE-PATH" ```
 
-        - Run the following to install PyTorch inside of the virtual envrionment:
+        - Run the following to install PyTorch inside of the virtual environment:
 
             -   ``` conda install torch torchvision torchaudio ```
 
     - [Matplotlib](https://matplotlib.org/) library for data visualization.
             
-        - Activate the virtual environment, where "ABOLSUTE-PATH" is the absolute path to your virtual envrionment:
+        - Activate the virtual environment, where "ABSOLUTE-PATH" is the absolute path to your virtual environment:
 
             - ``` conda activate "ABSOLUTE-PATH" ```
 
@@ -34,9 +34,9 @@ After cloning the repository:
 
     - [Pandas](https://pandas.pydata.org/) library for data analysis and manipulation.
 
-        - Activate the virtual environment, where "ABOLSUTE-PATH" is the absolute path to your virtual envrionment:
+        - Activate the virtual environment, where "ABSOLUTE-PATH" is the absolute path to your virtual environment:
 
-            - ``` conda activate "ABOLUTE-PATH" ```
+            - ``` conda activate "ABSOLUTE-PATH" ```
         
         - Run the following to install Pandas inside of the virtual environment:
 
