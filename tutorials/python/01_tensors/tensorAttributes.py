@@ -18,4 +18,4 @@ else: # Else if the GPU is unavailable...
 print(f"Shape of tensor: {tensor.shape} \n") # Print the shape parameter.
 print(f"Datatype of tensor: {tensor.dtype} \n") # Print the datatype parameter.
 print(f"Device tensor is stored on: {tensor.device} \n") # Print the device parameter.
-print(f"Tensor conents: \n {tensor} \n") # Print contents.
+print(f"Tensor contents: \n {tensor} \n") # Print contents.

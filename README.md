@@ -6,11 +6,11 @@ After cloning the repository:
 
 1. Python Dependencies:
 
-    - A virtual environment will need to be created in the cloned repository.
+    - A virtual environment will need to be created in the cloned repository, where "ENV-NAME" is the name of your choosing for your virtual environment.
 
         - Here's an example using [Conda](https://docs.conda.io/projects/conda/en/stable/#):
 
-            - ``` conda create -n env-01 python=3.9 scipy=0.15.0 numpy ```
+            - ``` conda create -name "ENV-NAME" ```
 
     - [PyTorch](https://pytorch.org/) library for machine learning.
 
