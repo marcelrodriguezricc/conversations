@@ -1,0 +1,2 @@
+# Ignore LibTorch library:
+tutorials/cpp/00_helloLibTorch/libtorch
