@@ -42,6 +42,16 @@ After cloning the repository:
 
             - ``` conda install pandas ```
 
+    - [Scikit-Image](https://scikit-image.org/) library for image processing.
+
+        - Activate the virtual environment, where "ABSOLUTE-PATH" is the absolute path to your virtual environment:
+
+            - ``` conda activate "ABSOLUTE-PATH" ```
+        
+        - Run the following to install Pandas inside of the virtual environment:
+
+            - ``` conda install scikit-image```
+
 
 2. C++ Dependencies:
 
