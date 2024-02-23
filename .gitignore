@@ -3,3 +3,6 @@ tutorials/cpp/00_helloLibTorch/libtorch
 
 # Ignore virtual python environment:
 pythonEnv
+
+# Ignore dataset files:
+data

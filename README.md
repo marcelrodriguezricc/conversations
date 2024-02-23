@@ -52,3 +52,9 @@ After cloning the repository:
         - MacOS users should install libomp.dylib and move it to the "lib" subfolder of the "libtorch" directory using [Homebrew](https://brew.sh/):
 
             - ``` brew install libomp ```
+
+3. Submodules:
+
+    - Get all submodules for the repository.
+
+        - ``` git submodule update --init --recursive ```

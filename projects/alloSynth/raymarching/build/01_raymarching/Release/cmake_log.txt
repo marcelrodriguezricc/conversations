@@ -1,0 +1,17 @@
+-- ==== Configuring Gamma.
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Found SNDFILE 
+-- libsndfile: /opt/homebrew/lib/libsndfile.dylib
+-- threading: 
+-- Using Cocoa for window creation
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Compiling with support for: core
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Could NOT find ALSA (missing: ALSA_LIBRARY ALSA_INCLUDE_DIR) 
+-- Compiling with support for: coremidi
+-- Using the multi-header code from /Users/marcel/Desktop/AlloLib/allolib_playground/allolib/external/json/include/
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Using libsndfile: /opt/homebrew/lib/libsndfile.dylib
+-- Configuring done (0.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /Users/marcel/Desktop/AlloLib/allolib_playground/tutorials/raymarching/build/01_raymarching/Release

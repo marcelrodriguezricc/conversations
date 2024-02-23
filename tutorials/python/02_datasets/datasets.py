@@ -1,6 +1,6 @@
 # From https://pytorch.org/tutorials/beginner/basics/data_tutorial.html
 
-# Dependencies:
+# Import:
 import torch # PyTorch Library.
 from torch.utils.data import Dataset # Dataset class to store and reference stored data.
 from torch.utils.data import DataLoader # Dataloader class for fast data retrieval.
@@ -47,8 +47,8 @@ labels_map = { # An array which gives a name to each of the 10 class labels.
 figure = plt.figure(figsize=(8, 8)) # Create the Matplotlib interface.
 cols, rows = 3, 3 # The columns and rows of our index map for the Matplotlib interface.
 for i in range(1, cols * rows + 1): # Iterate through each item.
-    sample_idx = torch.randint(len(training_data), size=(1,)).item() # Generate a random interger from 0 to the length of the data set.
-    img, label = training_data[sample_idx] # Grab the nth sample of our data set, with n being the randomally generated integer.
+    sample_idx = torch.randint(len(training_data), size=(1,)).item() # Generate a random integer from 0 to the length of the data set.
+    img, label = training_data[sample_idx] # Grab the nth sample of our data set, with n being the randomly generated integer.
     figure.add_subplot(rows, cols, i) # Add sample to plot.
     plt.title(labels_map[label]) # Title the sample with the label.
     plt.axis("off") # Turn axis off.

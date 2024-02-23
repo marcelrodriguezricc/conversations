@@ -1,6 +1,6 @@
 # From https://pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html
 
-# Dependencies:
+# Import:
 import os # Library for interacting with the operating system.
 import torch # PyTorch library for machine learning.
 from torch import nn # Import Neural Network class.
@@ -33,10 +33,10 @@ class NeuralNetwork(nn.Module): # Define class Neural Network and inherit from n
             nn.Linear(512, 10), # Final layer, accepts an input tensor of size 512 and outputs a tensor of size 10, corresponding to number of output classes.
         )
 
-    def forward(self, x): # This function tells the neural network to feedforward.
-        x = self.flatten(x)  # Reshape the input tensor into a one dimensional tensor.
-        logits = self.linear_relu_stack(x) # Pass to our previously established sequential network.
-        return logits # Return raw predictions.
+    def forward(self, x): # Define the forward pass function for the neural network to make predictions.
+        x = self.flatten(x) # Flatten the input tensor to be one dimensional
+        logits = self.linear_relu_stack(x)  # Pass the input tensor through the linear_relu_stack to make predictions.
+        return logits # Return the predictions.
     
 # Print the Structure of the Neural Network:
 model = NeuralNetwork().to(device) # Create an instance of the neural network, and move it to the device.

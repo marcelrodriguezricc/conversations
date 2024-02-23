@@ -1,6 +1,6 @@
 # From https://pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html
 
-# Dependencies:
+# Import:
 import torch # Import PyTorch library for machine learning.
 
 # Simple Example:

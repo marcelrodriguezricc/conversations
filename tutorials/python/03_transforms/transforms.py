@@ -1,6 +1,6 @@
 # From https://pytorch.org/tutorials/beginner/basics/data_tutorial.html
 
-# Dependencies:
+# Import:
 import torch # PyTorch library for machine learning.
 from torchvision import datasets # Dataset class from TorchVision.
 from torchvision.transforms import ToTensor, Lambda #  Functions for transforming data to normalized tensors and the labels to one-hot encoded tensors.
