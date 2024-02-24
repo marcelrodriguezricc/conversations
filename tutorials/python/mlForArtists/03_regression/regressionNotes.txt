@@ -1,0 +1,172 @@
+Course: https://www.kadenze.com/courses/machine-learning-for-musicians-and-artists/info
+
+Lesson 3 - Regression
+
+1. Classification vs Regression
+
+    - Classification
+
+        - Output is a class label / category (integer).
+
+        - Classifier will never output a value not in the training set.
+
+        - No notion of "in between" or "outside of" categories.
+
+    - Regression
+
+        - Output is a floating point number.
+        
+        - Can output values not in training set.
+
+        - Output might be between or outside of values in training set.
+
+2. Linear Regression: 
+
+    - A function for a straight line. 
+        
+    - An input on x produces an output y through the function linearly.
+    
+    - One Input Feature: y = a * x + b
+        
+    - Two Input Features: y = a * x1 + b * x2 + c
+
+    - A linear regression algorithm can is trained on the values of a & b based on positions of each point in the training data.
+
+        - Which value of a & b give us the most accurate predictions?
+
+        - To determine which line is best, we can define a score which finds the distance from each point of training data to the line.
+
+            - The sum of all distances squared is our score (Least Squares Regression).
+
+                - The squaring of distances penalizes larger outliers.
+
+    - Good for very simple smooth & predictable control, like over audio volume.
+ 
+3. Polynomial Regression
+
+    - y = a * x^2 + b * x + c
+
+    - Able to produce a curved parabola to predict input data.
+
+    - Can also use Least Squares Regression to find the most accurate curve.
+
+4. Higher Order Polynomials
+
+    - Can we changed through a menu in Wekinator.
+
+    - Higher orders of polynomial can fit the predicted output more accurately to complex shapes in the training data.
+
+5. Fitting Regression Models
+
+    - High order polynomials can have more noise when fit to non-complex shapes in training data.
+
+    - No single best algorithm.
+
+    - Algorithm has to be best matched to your problem.
+
+        - "No free lunch."
+
+    - Adding more examples can also improve accuracy.
+
+6. Neural Networks
+    
+    - Several neurons in a network each with their own equation.
+
+        - With three inputs: w0 + w1 * i1 + w2 * i2 + w3 * i3
+
+            - w0 is a bias.
+
+        - A sigmoid function is then applied to this sum in an S shaped curve.
+    
+    - Perceptron is a "network" with a single input.
+
+    - A neural network has an input layer, several hidden layers, and an output layer.
+
+        - Each neuron does a simple calculation, then passes it on to the next layer of neurons.
+
+        - Training it is based on finding values for the "w" variables which promote accurate predictions.
+
+7. Using Neural Networks
+
+    - Wekinator's model uses sigmoid functions for all the inner nodes, and a linearly summed output.
+
+    - More hidden layers, and more neurons, will increase the complexity of the predictive curve. 
+
+        - More hidden layers and more neurons will require more training examples (a larger dataset) to improve prediction.
+
+        - Wekinator has a menu for adjusting the number of hidden layers.
+
+    - The number of hidden layers, neurons, and training examples, all vary from problem to problem. Again, "no free lunch."
+
+8. Building Expressive Interfaces
+
+    - Involves controlling more than one thing a time.
+
+    - More than one dimensionality of input.
+
+9. Mapping
+
+    - How inputs control outputs.
+
+    - Our model serves as our vessel for mapping.
+
+    - One model is controlling each output with exactly one input.
+
+        - Hard to use, less expressive.
+
+        - Uncommon in acoustic instruments.
+
+        - Common in synthesizers.
+
+    - Using machine learning, we can create complex mappings for multiple outputs from one input.
+
+        - More expressive.
+
+    - Wekinator has an individual model for each output from each input.
+
+        - All to all mapping.
+
+        - Mapping can be changed from menu.
+
+10. Optimization
+
+    - Finding values for unknown variables which give the most accurate predictions.
+    
+        - Eg. Least Squares Regression, which finds values of a and b to give best score.
+
+    - Best optimization problem is when you can manipulate your function to find the best values instead of testing for all possible variables.
+
+        - Linear regression is an example of this, the values for a and b have an equation which minimize the sum of squared error between training examples and line.
+
+    - Optimizing Neural Networks
+
+        - Our unknown values are wN, wN-1...., wN-N (w0, bias) where N is the number of inputs. 
+
+        - Goal is to find values for weights & bias that give best score (most accuracy).
+
+            - Worse score when the predictions do not match, better when they do match.
+
+        - Least-Squares objection function is among many that work well to achieve this.
+
+            - Wekinator uses this.
+
+            - However, there is not an equation for calculating the exact optimal for each weight, as there was for calculating the optimal values for a and b in the linear regression.
+
+                - We could try with randomly applying weights iteratively a number of times and keep the one with the lowest error. However, this is not the best method.
+
+            - Backpropagation using Gradient Descent.
+
+                - Calculate a gradient for finding a derivative for the change for final score when each weight is adjusted.
+
+                - Adjust weights reverse to the gradient (gradient descent).
+
+                - Repeat until error drops below a threshold, or a predetermined number of times.
+
+                - Multilayer perceptron in Weka is the toolkit used by Wekinator.
+
+
+
+    
+    
+
+
