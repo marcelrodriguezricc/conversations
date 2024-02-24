@@ -20,7 +20,7 @@
 
 - [What is One Hot Encoding...](https://medium.com/@michaeldelsole/what-is-one-hot-encoding-and-how-to-do-it-f0ae272f1179)
 
-<h3>Neural Networks:</h3>
+<h3>Neural Networks</h3>
 
 - [What is a neural network?](https://www.ibm.com/topics/neural-networks)
 
@@ -30,7 +30,7 @@
 
 - [Neural Networks and Deep Learning - Chapter 1](http://neuralnetworksanddeeplearning.com/chap1.html)
 
-<h3>Gradients:</h3>
+<h3>Gradients</h3>
 
 - [A Gentle Introduction to Function Derivatives](https://machinelearningmastery.com/a-gentle-introduction-to-function-derivatives/)
 
@@ -38,6 +38,10 @@
 
 - [Neural Networks and Deep Learning - Chapter 2](http://neuralnetworksanddeeplearning.com/chap2.html)
 
-<h3>Optimization:</h3>
+<h3>Optimization</h3>
 
 - [Backpropagation Calculus](https://www.youtube.com/watch?v=tIeHLnjs5U8)
+
+<h3>Machine Learning for Artists</h3>
+
+- [ML for Musicians and Artists]https://www.kadenze.com/courses/machine-learning-for-musicians-and-artists-v/sessions/introduction

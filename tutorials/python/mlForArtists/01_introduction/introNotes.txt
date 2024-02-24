@@ -1,0 +1,61 @@
+Course: https://www.kadenze.com/courses/machine-learning-for-musicians-and-artists/info
+
+Lesson 1 - Introduction
+
+Types of algorithms for real time analysis:
+
+    1. Regression
+
+    2. Classification
+
+    3. Temporal Analysis
+
+Machine Learning Pipeline:
+
+    1. Input
+
+        - Controller.
+
+        - Camera.
+
+        - Datasets.
+
+    2. Processing / Decision Making (Model)
+
+        - Computer decides what action to take.
+
+    3. Output
+
+        - Sound synthesis, game, video, etc...
+
+ML Algorithms:
+
+    1. Supervised
+
+        -   Algorithm which helps in the middle, processing / decision-making process, or the model.
+
+        -   Builds a model from inputs and outputs, determines what the model should ultimately do.
+
+        -   The learning algorithm takes in training data, and creates the model.
+
+            -   When the model is given input data, it generates a corresponding output.
+
+Drum Machine Example:
+
+    1. Processing allows for webcam input. It reduces the dimensionality of the image for a more manageable dataset.
+
+        - This information is then sent to Wekinator over OSC.
+
+    2. Wekinator collects snapshots of the input information (training examples) from each state. These states are gathered and assigned to a corresponding output value.
+
+        - The combination of different states can then be gathered into a model, and tested by changing between the states and looking for corresponding output integer.
+
+        - The corresponding output integer is then sent to ChucK to switch between sound states.
+
+    3. ChucK produces the drum machine sounds based on the input integer from Wekinator.
+
+Wekinator:
+
+    - A program for real-time machine learning.
+
+    - Uses OSC as communication protocol.

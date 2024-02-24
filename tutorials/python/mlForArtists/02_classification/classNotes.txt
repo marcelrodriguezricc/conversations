@@ -1,0 +1,39 @@
+Course: https://www.kadenze.com/courses/machine-learning-for-musicians-and-artists/info
+
+Lesson 2 - Classification
+
+1. What is a classifier?
+
+    - You're building a number of categories called "classes."
+
+        - Webcam Example: Am I in position 1, position 2, or position 3?
+
+        - Categories are mutually exclusive.
+
+2. Nearest Neighbor Classifier
+
+    - One Nearest Neighbor
+    
+        - Finds point in dataset that is closest to current input and classifies it identically.
+
+    - Decision Stump
+
+        - Learns a threshold from your examples "if-then-else block."
+
+    - K Nearest Neighbor
+
+        - Finds distance from three closest points in dataset to current input and classifies it based on whichever class is more represented.
+    
+    - Decision Tree
+
+3. Features
+
+    - Another word for the number of dimensionality of the data.
+    
+        - A point in three dimensional space has three features (x, y, z).
+
+4. Input Output Connector
+
+    - In Wekinator, you can remove features from specified inputs from being considered in determining the output from the input-output connector menu.
+
+    - Effects which choice of features will effect results.
