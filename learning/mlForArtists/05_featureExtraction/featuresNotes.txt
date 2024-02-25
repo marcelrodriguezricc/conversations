@@ -1,0 +1,139 @@
+Course: https://www.kadenze.com/courses/machine-learning-for-musicians-and-artists/info
+
+Lesson 5 - Feature Extraction
+
+1. What are features?
+
+    - A measurement of some phenomena represented by a number.
+
+    - If our input is multi-dimensional, there will be a list of features for each example.
+
+        - List of features is called a "feature vector."
+
+            - Assumptions:
+        
+                - Always the same length (eg. 3 features).
+
+                - Same order and meaning from list to list.
+    
+2. What is a good feature?
+
+    - Should be relevant to the learning problem.
+
+    - Should have as little noise as possible.
+
+    - We don't want too many features.
+
+    - The more features you have, the more training examples you need.
+
+    - Curse of dimensionality.
+
+    - Set of features should as a whole should provide enough information.
+
+        - We would like examples that are close in feature space to be similar to each other. (eg. same  class).
+
+            - Adding a dimension may differentiate further between classes.
+
+3. Simple Features:
+
+    - With some controllers you will extract features using streaming or polling approach.
+
+        - 10 milliseconds.
+
+    - Some controllers send an event when controls are interacted with.
+
+    - Wekinator can handle feature selection from a menu.
+
+    - Difference features can be used to overcome noisy inputs (rate of change, etc.)
+
+        - In Wekinator, you may need to press record while the variable is changing to capture the examples correctly.
+
+        - You can increase dimensionality of this as well (rate of change of rate of change, velocity to acceleration).
+
+    - Wekinator allows you to delete training examples manually to isolate features and clean up noise.
+
+    - There are also data sending constraints in Wekinator Input Helper, such as threshold.
+
+4. Complicated Inputs:
+
+    - Real-time audio and video.
+
+    - Audio Feature Extractor
+
+        - RMS for amplitude.
+
+        - FFT for sinusoidal components.
+
+            - Spectral Centroid for timbral qualities.
+
+            - Constant Q transform gives us amplitude of peaks.
+
+                - Variable amount of bins for octave.
+
+                - Can be beneficial to lower number of bins for simplicity's sake
+
+            - Chromagram sums together all bins which correspond to a certain frequency.
+            
+            - Mel-Frequency Cepstral Coefficients
+
+                - Sound qualities aside from pitch and loudness.
+
+                    - Speech, instrumentation.
+
+                - Used in genre classification, speech recognition.
+
+                - Gives a vector of values (12 to 13).
+
+                - Each coefficient is consistently similar for similar sounds.
+            
+            - Using several features in tandem can help with recognition of musical phenomena.
+
+5. Recommended Tools:
+
+    - Real-time feature Extraction
+
+        - Maximilian (C++).
+
+        - Marsyas (C++, Python, Max/MSP).
+
+        - Max/MSP Analyzer~, Fiddle~.
+
+6. Smoothing inputs
+
+    - Averaging every n number of values.
+
+    - Filter.
+
+        - Wekinator has a filter equation section.
+
+7. Computer Vision
+
+    - OpenCV (OpenFrameworks).
+
+    - Color tracking.
+
+    - Fiducials (Shapes meant for computer vision)
+
+        - Reactivision (Library for Computer Vision).
+
+    - Haar Cascades
+
+        - Used in face detection.
+
+            - Darker shadows under your eyes than your cheeks, looks for bar of bright pixel over dark pixel.
+
+        - Can be built with AdaBoost from large datasets.
+
+    - Compare pixels from one frame to the next (rate of change).
+
+        - Can sum these features to get lower dimensional inputs.
+    
+    - Optical Flow
+
+        - Looks at two subsequent frames of video and tries to match pixels in both frames.
+
+            - OpenFrameworks OFX Flowtools.
+
+8. Rate of Input
+
+    - Wekinator allows you to change rate of sent values.
