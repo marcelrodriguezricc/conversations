@@ -9,3 +9,6 @@ data
 
 # Ignore .vscode folder:
 .vscode
+
+# Ignore CPP build files:
+learning/libTorchTutoials/00_helloLibTorch/helloTensor/build
