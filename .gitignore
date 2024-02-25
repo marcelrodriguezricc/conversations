@@ -1,8 +1,11 @@
 # Ignore LibTorch library:
-tutorials/cpp/00_helloLibTorch/libtorch
+learning/libTorchTutoials/libtorch
 
 # Ignore virtual python environment:
 pythonEnv
 
 # Ignore dataset files:
 data
+
+# Ignore .vscode folder:
+.vscode
