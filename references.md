@@ -46,7 +46,7 @@
 
 - [ML for Musicians and Artists]https://www.kadenze.com/courses/machine-learning-for-musicians-and-artists-v/sessions/introduction
 
-- [Mapping Strategies for Musical Perfomance](https://www.researchgate.net/publication/243774325_Mapping_Strategies_for_Musical_Performance)
+- [Mapping Strategies for Musical Performance](https://www.researchgate.net/publication/243774325_Mapping_Strategies_for_Musical_Performance)
 
 - [Towards a Model for Instrumental Mapping in Expert Musical Interaction](https://www.researchgate.net/publication/209436163_Towards_a_Model_for_Instrumental_Mapping_in_Expert_Musical_Interaction)
 
