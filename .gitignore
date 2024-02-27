@@ -12,3 +12,6 @@ data
 
 # Ignore CPP build files:
 learning/libTorchTutoials/00_helloLibTorch/helloTensor/build
+
+# Ignore openFrameworks:
+openFrameworks
