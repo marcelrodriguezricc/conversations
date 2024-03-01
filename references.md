@@ -44,10 +44,14 @@
 
 <h3>Machine Learning for Artists</h3>
 
-- [ML for Musicians and Artists]https://www.kadenze.com/courses/machine-learning-for-musicians-and-artists-v/sessions/introduction
+- [ML for Musicians and Artists](https://www.kadenze.com/courses/machine-learning-for-musicians-and-artists-v/sessions/introduction)
 
 - [Mapping Strategies for Musical Performance](https://www.researchgate.net/publication/243774325_Mapping_Strategies_for_Musical_Performance)
 
 - [Towards a Model for Instrumental Mapping in Expert Musical Interaction](https://www.researchgate.net/publication/209436163_Towards_a_Model_for_Instrumental_Mapping_in_Expert_Musical_Interaction)
 
 - [Mapping Performer Parameters to Synthesis Engines](https://www.cambridge.org/core/journals/organised-sound/article/mapping-performer-parameters-to-synthesis-engines/BD8AAF4BC582D3DCACB5AEC5BF49F8FE)
+
+- [Fast DTW: Toward Accurate Dynamic Time Warping in Linear Time and Space](https://cs.fit.edu/~pkc/papers/tdm04.pdf)
+
+- [Continuous Realtime Gesture Following and Recognition](https://link.springer.com/chapter/10.1007/978-3-642-12553-9_7)

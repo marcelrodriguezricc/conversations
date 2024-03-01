@@ -1,0 +1,72 @@
+Course: https://www.kadenze.com/courses/machine-learning-for-musicians-and-artists/info
+
+Lesson 6 - Working with time
+
+What if we would like our model to recognize patterns over time?
+
+1. With Wekinator...
+
+    - In the Input Helper, there's an option to include an input buffer, which maintains
+    a buffer of a set number of values for each input.
+
+        - The length of the buffer can be adjusted to accommodate more samples from each input.
+
+            - This gives us a higher dimensionality, which can make things hard to classify.
+
+        - Buffers that are used to train the model must be the same length in order for classification and regression algorithms to properly categorize the features.
+
+            - Downsample or upsample buffer to be the same length.
+        
+            - Input Helper program can specify how many time points will be stored in buffer between start and stop.
+
+                - An extra feature can be mapped to trigger start and stop.
+
+2. Segmentation
+
+    - Determining when an action begin or ends.
+
+        - Audio might use RMS to determine when an action begins or end.
+
+        - With video, a change in movement from stationary to in motion can be used to determine.
+
+3. Simple Approach
+
+    - Use a physical button or simple trigger to detect when an action starts.
+
+    - Begin collecting features and store in a buffer of predetermined size.
+
+    - After a set period of time, or from a trigger, take the data from the buffer and classify it.
+
+        - Upsample / downsample if needed.
+
+    - If you don't have  physical button, a trigger can require careful tuning.
+
+    - If there is potential for changes in how an action proceeds over time, the feature space may look different to the model.
+
+    - Limited to classification or regression only after motion is completed.
+
+4. Dynamic Time Warping
+
+    - Computes similarity of two sequences of data overtime.
+
+    - Each feature vector represents a single "snapshot" in time.
+
+        - Must always have the same number & type of features.
+
+    - Sequences of features don't have to be the same length.
+
+    - Allows for the computation of similarity between similar patterns that happen at different rates.
+
+        - For example, moving your hand in a clockwise circle quickly, or slowly.
+
+    - This can be done in Wekinator
+
+        - Patterns can be recorded, given a threshold of similarity, and be dedicated to a specific output.
+
+        - It can use classification and regression models to compare similarities through a dynamic time warping based multidimensional space as opposed to two dimensional euclidean space.
+        
+            - It gives a distance difference between sequences.
+
+            - Works well with nearest neighbor classifier, which also looks at distances.
+            
+        - 
